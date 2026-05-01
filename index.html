@@ -16,27 +16,33 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            /* Ensures centering on desktop and eliminates mobile scroll */
             height: 100vh;
+            height: 100dvh; 
             margin: 0;
             text-align: center;
+            padding: 20px;
+            overflow: hidden;
+            box-sizing: border-box;
         }
         h1 {
             font-size: 3rem;
-            font-weight: 700;
-            letter-spacing: -0.05em;
-            margin-bottom: 0.5rem;
+            font-weight: 700; 
+            letter-spacing: -0.01em;
+            margin-bottom: 1.5rem;
         }
-        p {
+        .status {
             font-style: italic;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             opacity: 0.8;
-            margin: 0;
+            letter-spacing: 0.02em;
+            margin: 4px 0;
         }
     </style>
 </head>
 <body>
     <h1>Lifestyle Canvas Media</h1>
-    <p>Website under development</p>
-    <p>Arriving Spring 2026</p>
+    <p class="status">Website under development</p>
+    <p class="status">Arriving Spring 2026</p>
 </body>
 </html>
